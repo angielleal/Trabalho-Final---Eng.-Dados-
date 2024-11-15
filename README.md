@@ -54,9 +54,11 @@ Adicione aqui o diagrama representando seu pipeline (use ferramentas como [Excal
 ---
 
 ### Autores
-- Aluno 1: [GitHub Profile](https://github.com/seu-usuario)
-- Aluno 2: [GitHub Profile](https://github.com/seu-usuario)
-
+- Aluno 1: Angiel Leal - (https://github.com/angielleal)
+- Aluno 2: Lucas Daufenbach - (https://github.com/seu-usuario)
+- Aluno 3: Marcos Jeronimo - (https://github.com/seu-usuario)
+- Aluno 2: Mateus Zanin - (https://github.com/seu-usuario)
+  
 ---
 
 ### Referências
