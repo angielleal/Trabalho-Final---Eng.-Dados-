@@ -1,4 +1,4 @@
-# Pipeline de Dados com Apache Spark
+# Pipeline de Dados com Spark no DataBricks
 
 ## Licença
 [MIT License](LICENSE)
