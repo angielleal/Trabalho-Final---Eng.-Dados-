@@ -1,0 +1,45 @@
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  # Executa o workflow em cada push na branch main
+  push:
+    branches:
+      - main
+  # Permite executar o workflow manualmente
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Faz o checkout do código do repositório
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Configura Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      # Instala as dependências do MkDocs
+      - name: Install dependencies
+        run: |
+          pip install mkdocs
+          pip install mkdocs-material
+
+      # Compila a documentação usando MkDocs
+      - name: Build MkDocs site
+        run: mkdocs build --site-dir _site
+
+      # Faz o upload do site gerado para o GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        with:
+          artifact: "_site"
